@@ -59,7 +59,7 @@ GOOD_MATCH_PERCENT = 0.15
 
 ## **3.Generate the multi-view 3D visual effects**
 
-因為alignment會有黑邊問題，先使用cv2.rectangle找出沒有收到alignment影像的範圍，
+- #### 因為alignment會有黑邊問題，先使用cv2.rectangle找出沒有收到alignment影像的範圍，
 
 ![](https://i.imgur.com/AGgEkr1.png)
 上圖ok
@@ -78,14 +78,18 @@ GOOD_MATCH_PERCENT = 0.15
 
 ![](https://media.giphy.com/media/Kc7RQMPphWSrj7DmAE/giphy.gif)
 
-如果是每次都參考前一張對齊好的影像，因爲該影像已輕微形變，則錯誤偏移量會逐次纍積，對齊后的影像會越來越傾斜，導致無法完成更後續影像的對齊。但是效果卻比較符合我們的期望，目標物體的大小和位置都相對保持一致。
+- #### 如果是每次都參考前一張對齊好的影像，因爲該影像已輕微形變，則錯誤偏移量會逐次纍積，對齊后的影像會越來越傾斜，導致無法完成更後續影像的對齊。但是效果卻比較符合我們的期望，目標物體的大小和位置都相對保持一致。
 ![](https://i.imgur.com/TRTtM09.gif)
 
 
+- #### 使用後製軟體AE
 
-<img src="https://media.giphy.com/media/giRkvSqwmmiz9hFK1o/giphy.gif" />
+首先設定圖片中深度資訊，然後使用map進行水平方向和垂直方向來調節。
 
-![](https://media.giphy.com/media/giRkvSqwmmiz9hFK1o/giphy.gif)
+效果如下
+![](https://media.giphy.com/media/lNACVBhbrspEX2JsV6/giphy.gif)
+
+**若是看不到結果，請點擊[這裡](https://media.giphy.com/media/lNACVBhbrspEX2JsV6/giphy.gif)**
 
 ## **4.Exploit creativity to add some image processing to enhance effect**
 

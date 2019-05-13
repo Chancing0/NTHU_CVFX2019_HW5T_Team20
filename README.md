@@ -83,7 +83,7 @@ GOOD_MATCH_PERCENT = 0.15
 
 
 
-![](https://media.giphy.com/media/giRkvSqwmmiz9hFK1o/giphy.gif)
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" />
 
 ## **4.Exploit creativity to add some image processing to enhance effect**
 

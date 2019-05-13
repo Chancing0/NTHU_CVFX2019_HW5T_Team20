@@ -71,7 +71,7 @@ GOOD_MATCH_PERCENT = 0.15
 
 篩選完挑一組連續的好的最結果，出來
 
-效果不好，因爲影像t的目標物體大小和位置只取決於前一張影像t-1，而與更早的影像t-2和之前的影像無關，造成目標物體位置和大小一直變動。
+效果不好，因爲影像t的目標物體大小和位置只取決於前一張影像It-1，而與更早的影像It-2和之前的影像無關，造成目標物體位置和大小一直變動。
 
 ![](https://media.giphy.com/media/KDQSBGIpN6yoeyMS0n/giphy.gif)
 
@@ -81,6 +81,9 @@ GOOD_MATCH_PERCENT = 0.15
 如果是每次都參考前一張對齊好的影像，因爲該影像已輕微形變，則錯誤偏移量會逐次纍積，對齊后的影像會越來越傾斜，導致無法完成更後續影像的對齊。但是效果卻比較符合我們的期望，目標物體的大小和位置都相對保持一致。
 ![](https://i.imgur.com/TRTtM09.gif)
 
+
+
+![](https://media.giphy.com/media/giRkvSqwmmiz9hFK1o/giphy.gif)
 
 ## **4.Exploit creativity to add some image processing to enhance effect**
 

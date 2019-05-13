@@ -1,7 +1,6 @@
 # NTHU_CVFX_HomeWork5_Team20
 
 
-
 # Outline
 
 **1.Take multi-view images by yourselves**
@@ -88,6 +87,9 @@ GOOD_MATCH_PERCENT = 0.15
 
 效果如下
 ![](https://media.giphy.com/media/lNACVBhbrspEX2JsV6/giphy.gif)
+AE结果
+
+![origin_image](main.gif)
 
 **若是看不到結果，請點擊[這裡](https://media.giphy.com/media/lNACVBhbrspEX2JsV6/giphy.gif)**
 

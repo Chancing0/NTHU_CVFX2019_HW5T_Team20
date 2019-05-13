@@ -11,8 +11,6 @@
 
 **4.Exploit creativity to add some image processing to enhance effect**
 
-**5.Compare&Conclusion**
-
 ## **1.Take multi-view images by ourselves**
 ![](https://i.imgur.com/nsvPc3s.gif)
 ![](https://media.giphy.com/media/RitcFC4ojyl1fRf1DD/giphy.gif)
@@ -99,8 +97,6 @@ AE结果
 1. 最好的情況是把影像當中`本該移動`的物體讓他停止移動。
 1. 次好的情況是把影像當中`可以移動也可以不移動`的物體讓他停止移動。（因為這種情況可以被看成camera在全程錄影過程中的位置保持靜止）
 
-- ### live photo 
-
 - ### live photo （using post-process software）
 
 
@@ -125,9 +121,6 @@ AE结果
 |-----------------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | ![](https://thumbs.gfycat.com/HollowPerfectDwarfrabbit-size_restricted.gif) | ![](https://thumbs.gfycat.com/TediousHelplessBeardeddragon-size_restricted.gif) |
 | 原圖，畫面晃動                                                              | 效果最好的圖，天空的畫面穩定，而海水保持流動                                                  |
-
-
-## **5.Compare&Conclusion**
 
 
 

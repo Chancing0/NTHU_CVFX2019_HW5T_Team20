@@ -1,5 +1,3 @@
-# CVFX2019_HW5T_Team20
-CVFX2019_HW5T_Team20
 # NTHU_CVFX_HomeWork5_Team20
 
 
@@ -24,11 +22,11 @@ CVFX2019_HW5T_Team20
 
 
 ## **2.image alignment**
-#### Setting1: 
+### **Experiment 1.1:**
 直接使用兩張原圖做alignment的結果，可以看到alignment的效果不錯，抓到全圖特徵點，但卻沒有一個目標物體。
 ![](https://i.imgur.com/bNahDde.jpg)
 ![](https://i.imgur.com/sJGodDo.gif)
-#### Setting2: 
+### **Experiment 1.2:**
 我們的做法是，分別將咖啡杯mask起來，來然後使用這兩張mask圖進行alignment，並使用其前10%-50%的特徵點來進行warping，因爲前10%的點會在mask的邊緣上，不是屬於物體上的點，故捨去。理想狀況是特徵點能很好的描述目標物體的内容和輪廓。
 ![](https://i.imgur.com/ndjjuin.jpg)
 ![](https://i.imgur.com/Wx3Lap3.gif)
@@ -41,7 +39,7 @@ CVFX2019_HW5T_Team20
 
 
 
-
+### **Experiment 2:** 
 MAX_FEATURES = 200
 GOOD_MATCH_PERCENT = 0.15  
 
@@ -80,7 +78,7 @@ GOOD_MATCH_PERCENT = 0.15
 
 ![](https://media.giphy.com/media/Kc7RQMPphWSrj7DmAE/giphy.gif)
 
-如果是每次都參考前一張對齊好的影像t-1，則會逐次纍積錯誤偏移量，對齊后的圖會越來越傾斜，導致無法完成後續影像的對齊。但是效果卻比較符合我們的期望，目標物體的大小和位置都相對保持一致。
+如果是每次都參考前一張對齊好的影像，因爲該影像已輕微形變，則錯誤偏移量會逐次纍積，對齊后的影像會越來越傾斜，導致無法完成更後續影像的對齊。但是效果卻比較符合我們的期望，目標物體的大小和位置都相對保持一致。
 ![](https://i.imgur.com/TRTtM09.gif)
 
 
